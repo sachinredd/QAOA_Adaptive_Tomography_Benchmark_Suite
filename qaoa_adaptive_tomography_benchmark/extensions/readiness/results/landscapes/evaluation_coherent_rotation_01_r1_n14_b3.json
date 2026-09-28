@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "id": "evaluation_coherent_rotation_01",
+      "family": "coherent_rotation",
+      "round": 1,
+      "variant": "baseline",
+      "grid_min_expected_regret": 0.31785826948082413,
+      "grid_min_best_regret": 0.08629573339833724,
+      "grid_max_success": 0.0,
+      "grid_optimum_support_anywhere": false,
+      "best_mean_angles": [
+        0.0,
+        3.0630528372500483
+      ],
+      "best_sample_angles": [
+        0.0,
+        0.6283185307179586
+      ]
+    },
+    {
+      "id": "evaluation_coherent_rotation_01",
+      "family": "coherent_rotation",
+      "round": 1,
+      "variant": "dicke",
+      "grid_min_expected_regret": 0.20721489822489503,
+      "grid_min_best_regret": 0.0003131701829573971,
+      "grid_max_success": 0.9294692914490793,
+      "grid_optimum_support_anywhere": true,
+      "best_mean_angles": [
+        -1.0995574287564276,
+        0.15707963267948966
+      ],
+      "best_sample_angles": [
+        -2.670353755551324,
+        1.806415775814131
+      ]
+    }
+  ]
+}

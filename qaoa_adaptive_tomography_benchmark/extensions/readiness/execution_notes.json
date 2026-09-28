@@ -1,0 +1,14 @@
+{
+  "notes": [
+    {
+      "event": "worker_reschedule",
+      "detail": "An adaptive worker session was interrupted to change concurrency. Only incomplete rounds were recomputed using unchanged named seeds."
+    },
+    {
+      "event": "background_sessions_ended",
+      "detail": "At 2026-09-28T15:56Z the earlier scaffold and adaptive sessions were no longer active before all tasks had finished. The saved round checkpoints were resumed with the same scientific protocol and seeds."
+    }
+  ],
+  "outcome_based_stopping": false,
+  "resource_scope": "Resource tables describe committed logical simulation trajectories. Work interrupted before a round checkpoint was committed is recomputed from unchanged seeds and is not included as extra physical shots. No hardware shots were taken."
+}

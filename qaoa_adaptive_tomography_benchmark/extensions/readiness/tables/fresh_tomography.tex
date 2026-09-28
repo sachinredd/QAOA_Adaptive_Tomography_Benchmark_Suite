@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Policy & RMSE & Choi distance & Optimizer shots \\
+\midrule
+Full-pool greedy & 0.060470 & 0.058956 & 0.0 \\
+Swap search & 0.056103 & 0.056825 & 0.0 \\
+Original QAOA & 0.058002 & 0.057883 & 8994.1 \\
+Selected QAOA & 0.055164 & 0.053856 & 9030.4 \\
+\bottomrule
+\end{tabular}
+\caption{Descriptive fresh adaptive means at 4,056 unknown-channel applications. Two acquisition repetitions are averaged within each physical channel. Optimizer shots are a separate resource; ideal Dicke preparation is not compiled.}
+\label{tab:fresh-tomography}
+\end{table}

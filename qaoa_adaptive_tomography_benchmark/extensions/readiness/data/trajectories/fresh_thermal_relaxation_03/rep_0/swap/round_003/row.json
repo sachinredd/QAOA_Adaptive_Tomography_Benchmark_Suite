@@ -1,0 +1,42 @@
+{
+  "round": 3,
+  "selected": [
+    63,
+    64,
+    62
+  ],
+  "selection": {
+    "objective_shots": 0,
+    "final_shots": 0,
+    "policy": "swap",
+    "candidate_evaluations": 256,
+    "restarts": 3,
+    "energy": -6.806469095694538,
+    "seconds": 0.00724207199527882,
+    "local_gain": 6.806496961712154,
+    "selection_seconds": 0.029136468001524918
+  },
+  "fit": {
+    "status": "gradient_tolerance",
+    "seconds": 10.576148967003974,
+    "nll": 0.5668050025212048,
+    "evaluations": 5006,
+    "gradient_evaluations": 2503,
+    "tp_error": 2.5197572249512972e-14,
+    "selected_evaluations": 990,
+    "selected_gradient_evaluations": 495,
+    "selected_seconds": 2.2768489430018235,
+    "multistart": {
+      "candidates": 4,
+      "selected_candidate": 1,
+      "incumbent_nll": 0.5668050025218818,
+      "gain_over_incumbent": 6.770140004164205e-13
+    }
+  },
+  "stationarity": {
+    "nll": 0.5668050025212048,
+    "gradient_norm": 9.860338125803472e-07
+  },
+  "characterization_shots": 2526,
+  "applications": 4056
+}

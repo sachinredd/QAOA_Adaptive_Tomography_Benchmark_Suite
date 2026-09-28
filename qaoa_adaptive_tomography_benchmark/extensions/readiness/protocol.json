@@ -1,0 +1,83 @@
+{
+  "name": "QAOA initialization and objective mechanism extension",
+  "frozen_utc": "2026-09-28T15:33:14.330396+00:00",
+  "base_commit": "58f7a07",
+  "archived_source_sha256": "06df0eb1d4216ae92f630b04004e06365e55a48d6e68c1f0f86d32f3172a8934",
+  "extension_code_sha256": "b15d34d9b61b48d0a6352f190608ebc1fd7e95b3b2b00df35a38e762fdc73d59",
+  "status": "Local timestamped protocol, not external preregistration",
+  "development": "All 36 historical channels (6 archived development and 30 prior evaluation); checkpoints 1 and 2 only. Prior evaluation is now development, never fresh confirmation.",
+  "factorial": {
+    "initialization": [
+      "swept",
+      "dicke"
+    ],
+    "objective": [
+      "mean",
+      "lower_CVaR_0.2"
+    ],
+    "training": [
+      "128_shot",
+      "exact_diagnostic"
+    ],
+    "depth": 1,
+    "cap": 80,
+    "final_shots": 256,
+    "solver_seeds": [
+      8201,
+      8219,
+      8233
+    ]
+  },
+  "selection": "Among cvar,dicke,dicke_cvar, lowest channel-averaged expected best-of-256 normalized regret with finite-shot training; tie within 1e-12 prefers cvar,dicke,dicke_cvar in that order. Baseline is retained regardless of selection.",
+  "sample_size": "Use development channel SD of selected-minus-baseline sampled regret: N=6*ceil((1.96*SD/0.01)^2/6), bounded to 30..60. Approximate planning only; report whether the cap limits target precision. No outcome-based expansion.",
+  "fresh": {
+    "channel_seed": 280920261,
+    "acquisition_root": 28092026,
+    "repetitions": 2,
+    "families": [
+      "amplitude_damping",
+      "thermal_relaxation",
+      "dephasing",
+      "coherent_rotation",
+      "driven_dissipation",
+      "depolarizing"
+    ],
+    "distribution": "unchanged broad_v1",
+    "checkpoints": [
+      1,
+      2
+    ],
+    "solver_seeds": [
+      8401,
+      8419,
+      8433
+    ]
+  },
+  "primary": "Fresh frozen-state selected-minus-baseline sampled best-of-256 normalized energy regret; average 3 solver seeds, checkpoints 1 and 2, and 2 acquisition repetitions WITHIN physical channel; equal-family stratified t interval.",
+  "meaningful_margin": 0.01,
+  "success": "95% upper bound below 0 establishes directional improvement; upper bound below -0.01 establishes improvement beyond the prespecified margin.",
+  "downstream": {
+    "policies": [
+      "greedy",
+      "swap",
+      "baseline",
+      "selected"
+    ],
+    "rounds": 3,
+    "applications": 4056,
+    "primary_status": "Descriptive secondary outcomes: RMSE, normalized Choi trace distance, learning curves and resources; no multiplicity-adjusted claims."
+  },
+  "landscape": "Development only: first named seed; both initial states; 41x41 grid gamma in [-pi,pi], beta in [0,pi]. Bounded search, not global certificate.",
+  "limitations": [
+    "Ideal Dicke amplitudes are an initialization diagnostic; state-preparation gate cost is uncompiled and no hardware advantage is claimed.",
+    "Exact objectives and distribution expectations are offline diagnostics, not finite-shot policy resources.",
+    "All fresh comparisons use the original Aer oracle, readout, fitting and budget. Every fitting flag is retained."
+  ],
+  "environment": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2"
+  }
+}
