@@ -1,0 +1,38 @@
+{
+  "round": 3,
+  "selected": [
+    73,
+    57,
+    68
+  ],
+  "selection": {
+    "solver": "exact_qubo",
+    "objective_shots": 0,
+    "sample_shots": 0,
+    "candidate_evaluations": 364,
+    "selection_seconds": 0.0069852269953116775
+  },
+  "fit": {
+    "status": "iteration_limit",
+    "seconds": 38.57450788200367,
+    "nll": 0.494534643570524,
+    "evaluations": 22785,
+    "gradient_evaluations": 8000,
+    "tp_error": 6.208388666705627e-14,
+    "selected_evaluations": 5690,
+    "selected_gradient_evaluations": 2000,
+    "selected_seconds": 9.541178758001479,
+    "multistart": {
+      "candidates": 4,
+      "selected_candidate": 0,
+      "incumbent_nll": 0.494534643570524,
+      "gain_over_incumbent": 0.0
+    }
+  },
+  "stationarity": {
+    "nll": 0.494534643570524,
+    "gradient_norm": 3.822918314452668e-05
+  },
+  "characterization_shots": 2118,
+  "channel_applications": 4056
+}

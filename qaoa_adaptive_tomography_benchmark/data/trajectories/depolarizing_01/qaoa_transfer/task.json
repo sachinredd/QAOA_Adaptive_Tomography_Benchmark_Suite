@@ -1,0 +1,27 @@
+{
+  "id": "depolarizing_01",
+  "family": "depolarizing",
+  "instance": 1,
+  "channel": {
+    "n_qubits": 1,
+    "dt": 1.0,
+    "zz": 0.0,
+    "omega": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rates": [
+      0.04283415881230569,
+      0.04283415881230569,
+      0.021417079406152846
+    ]
+  },
+  "seeds": {
+    "acquisition": 3752356765,
+    "initialization": 4177140466,
+    "validation": 3381139851,
+    "refit": 1668201444
+  },
+  "policy": "qaoa_transfer"
+}

@@ -1,0 +1,33 @@
+{
+  "depth": 1,
+  "cap": 80,
+  "shortlist_size": 14,
+  "batch_size": 3,
+  "locked_utc": "2026-09-27T04:45:38.940706+00:00",
+  "development_scores": [
+    {
+      "depth": 1,
+      "cap": 20,
+      "expected_normalized_regret": 0.23885328032641182
+    },
+    {
+      "depth": 1,
+      "cap": 80,
+      "expected_normalized_regret": 0.2058592102535381
+    },
+    {
+      "depth": 2,
+      "cap": 20,
+      "expected_normalized_regret": 0.22474009979389567
+    },
+    {
+      "depth": 2,
+      "cap": 80,
+      "expected_normalized_regret": 0.23045349782895702
+    }
+  ],
+  "rule": "Lowest pooled cold/transfer development mean expected normalized energy regret; ties favor lower cap then depth.",
+  "evaluation_outcomes_used": false,
+  "development_records": 2160,
+  "protocol_sha256": "5ac027b34eee820ab49003e51138d5a6993f253e11f29bb74a3c9299b46dfd5c"
+}

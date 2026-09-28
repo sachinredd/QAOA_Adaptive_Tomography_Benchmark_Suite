@@ -1,0 +1,82 @@
+{
+  "round": 0,
+  "selected_ids": [
+    0,
+    1,
+    2,
+    30,
+    31,
+    32,
+    60,
+    61,
+    62,
+    75,
+    76,
+    77
+  ],
+  "selected_labels": [
+    "X+|X|t=1",
+    "X+|Y|t=1",
+    "X+|Z|t=1",
+    "Y+|X|t=1",
+    "Y+|Y|t=1",
+    "Y+|Z|t=1",
+    "Z+|X|t=1",
+    "Z+|Y|t=1",
+    "Z+|Z|t=1",
+    "Z-|X|t=1",
+    "Z-|Y|t=1",
+    "Z-|Z|t=1"
+  ],
+  "fit": {
+    "status": "gradient_tolerance",
+    "seconds": 0.8049057100015489,
+    "nll": 0.53572681624623,
+    "evaluations": 2012,
+    "gradient_evaluations": 1006,
+    "tp_error": 2.0515848308618504e-14,
+    "selected_evaluations": 480,
+    "selected_gradient_evaluations": 240,
+    "selected_seconds": 0.19779192699934356,
+    "multistart": {
+      "candidates": 4,
+      "selected_candidate": 0,
+      "incumbent_nll": 0.53572681624623,
+      "gain_over_incumbent": 0.0
+    },
+    "final_gradient_norm": 9.744998146590347e-07
+  },
+  "selection": {
+    "solver": "common_pilot",
+    "selection_seconds": 0.0,
+    "audit_seconds": 0.0,
+    "objective_shots": 0,
+    "sample_shots": 0,
+    "circuit_executions": 0
+  },
+  "selected_shots": [
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32
+  ],
+  "characterization_shots": 384,
+  "characterization_circuits": 12,
+  "channel_applications": 384,
+  "acquisition_seconds": 0.031369035999887274,
+  "fit_seconds": 0.805479071002992,
+  "selection_seconds": 0.0,
+  "optimizer_objective_shots": 0,
+  "optimizer_sample_shots": 0,
+  "optimizer_circuits": 0,
+  "total_attempted_shots": 384,
+  "algorithm_seconds": 0.8368481070028793
+}

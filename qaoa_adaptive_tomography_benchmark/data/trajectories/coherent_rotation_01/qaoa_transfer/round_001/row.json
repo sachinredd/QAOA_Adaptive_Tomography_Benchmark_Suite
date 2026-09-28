@@ -1,0 +1,65 @@
+{
+  "round": 1,
+  "selected": [
+    48,
+    19,
+    20
+  ],
+  "selection": {
+    "solver": "qaoa_transfer",
+    "objective_shots": 2560,
+    "sample_shots": 256,
+    "angles": [
+      1.1148897740578578,
+      1.2942156207202011
+    ],
+    "start_angles": [
+      0.7640588681147454,
+      0.9442913676517217
+    ],
+    "initial_bits": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "transferred": false,
+    "objective_evaluations": 20,
+    "total_shots": 2816,
+    "seconds": 0.014298850001068786,
+    "selection_seconds": 0.019189284001186024
+  },
+  "fit": {
+    "status": "gradient_tolerance",
+    "seconds": 4.487838584995188,
+    "nll": 0.524660095621591,
+    "evaluations": 14060,
+    "gradient_evaluations": 4973,
+    "tp_error": 4.6912479371237e-14,
+    "selected_evaluations": 1726,
+    "selected_gradient_evaluations": 606,
+    "selected_seconds": 0.5598654069981421,
+    "multistart": {
+      "candidates": 4,
+      "selected_candidate": 0,
+      "incumbent_nll": 0.524660095621591,
+      "gain_over_incumbent": 0.0
+    }
+  },
+  "stationarity": {
+    "nll": 0.524660095621591,
+    "gradient_norm": 9.735003053586482e-07
+  },
+  "characterization_shots": 996,
+  "channel_applications": 1608
+}

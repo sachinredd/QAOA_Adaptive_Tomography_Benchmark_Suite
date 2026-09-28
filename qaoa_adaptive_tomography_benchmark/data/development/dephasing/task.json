@@ -1,0 +1,97 @@
+{
+  "case": {
+    "family": "dephasing",
+    "instance": 0,
+    "strength": 1.0,
+    "noise": "calibrated_readout"
+  },
+  "case_id": "f4ac5507a3c06865",
+  "replicate": 4001,
+  "policy": "greedy",
+  "seeds": {
+    "acquisition": 2207853693,
+    "initialization": 3060524566,
+    "selection": 1347283399,
+    "refit": 35659352,
+    "validation": 9877518
+  },
+  "config": {
+    "seeds": [
+      4001,
+      4042,
+      4083,
+      4124
+    ],
+    "policies": [
+      "greedy",
+      "qaoa"
+    ],
+    "channel": {
+      "n_qubits": 1,
+      "dt": 1.0,
+      "zz": 0.0,
+      "omega": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rates": [
+        0.0,
+        0.0,
+        0.1785940394209577
+      ]
+    },
+    "rank": 4,
+    "pool_steps": [
+      1,
+      2,
+      4,
+      6,
+      8
+    ],
+    "validation_steps": [
+      3,
+      5,
+      9
+    ],
+    "validation_probes": 8,
+    "readout": [
+      0.03,
+      0.06
+    ],
+    "pilot_shots": 32,
+    "applications_per_setting": 408,
+    "round_shots": 96,
+    "rounds": 3,
+    "batch_size": 3,
+    "shortlist_size": 8,
+    "ridge": 1.0,
+    "fisher_probability_floor": 1e-06,
+    "fit": {
+      "iterations": 2000,
+      "learning_rate": 1.0,
+      "tolerance": 1e-06
+    },
+    "qaoa": {
+      "depth": 1,
+      "maxiter": 20,
+      "shots": 128,
+      "sample_shots": 256,
+      "restarts": 1,
+      "one_qubit_noise": 0.0,
+      "two_qubit_noise": 0.0
+    },
+    "random_qubo_samples": 256,
+    "audit_exact_gap": false,
+    "target_rmse": 0.02
+  },
+  "true_readout": [
+    0.03,
+    0.06
+  ],
+  "acquisition_fitting": {
+    "fresh_starts": 3
+  },
+  "id": "b68bdc082b177d266dafa573",
+  "index": 338
+}
